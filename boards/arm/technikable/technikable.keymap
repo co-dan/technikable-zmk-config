@@ -42,13 +42,13 @@
 #endif
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-	tri_layer {
-	    if-layers = <NAV_L NUM_L>;
-	    then-layer = <SYM_L>;
-	};
-    };
+    /* conditional_layers { */
+    /*     compatible = "zmk,conditional-layers"; */
+    /*     tri_layer { */
+    /*         if-layers = <NAV_L NUM_L>; */
+    /*         then-layer = <SYM_L>; */
+    /*     }; */
+    /* }; */
 
     keymap {
         compatible = "zmk,keymap";
