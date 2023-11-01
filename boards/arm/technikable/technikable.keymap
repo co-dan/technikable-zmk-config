@@ -115,6 +115,8 @@
 #else
                       &trans     &trans      &trans          &trans       &trans    &trans  &trans         &trans
 #endif
+            >;
+        };
 
         ble_layer {
             label = "Ble";
