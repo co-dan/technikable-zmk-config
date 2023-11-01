@@ -61,7 +61,7 @@
  &kp A   &hl LGUI S  &hl LSHFT D   &hs LCTRL F   &kp G           &kp TAB     &kp QUOT         &kp H            &hs RCTRL J    &hr RSHFT K  &hr RGUI L &lt FUN SEMI      
  &kp Z   &kp X       &kp C         &kp V         &kp B           &kp LSHFT   &kp RET          &kp N            &kp M          &kp COMMA    &kp DOT    &kp FSLH 
 //#ifdef TBLE_ORTHO
-                     &mt LGUI ESC     &mt LGUI ESC  &lt LOWER BSPC  &kp SPACE   &kp SPACE        &lt RAISE SPACE  &mt RALT RET   &kp RCTRL
+                     &mt LGUI ESC     &mt LGUI ESC  &lt LOWER BSPC  &kp BSPC   &kp SPACE        &lt RAISE SPACE  &mt RALT RET   &kp RCTRL
 /* #elif defined(TBLE_MIT) */
 /*                  &kp LCTRL  &kp LALT    &mo NAV_L          &kp SPACE                   &mo NUM_L      &kp RALT    &kp RCTRL */
 /* #else // TBLE_DUAL_2U */
