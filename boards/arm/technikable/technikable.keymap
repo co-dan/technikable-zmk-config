@@ -58,7 +58,7 @@
             label = "Base";
             bindings = <
  &kp Q   &kp W       &kp E         &kp R         &kp T           &kp ESC     &kp BKSP         &kp Y            &kp U          &kp I        &kp O      &kp P         
- &kp A   &hl LGUI S  &hl LSHFT D   &hs LCTRL F   &kp G           &kp TAB     &kp QUOT         &kp H            &hs RCTRL J    &hr RSHFT K  &hr RGUI L &kp SEMI      
+ &kp A   &hl LGUI S  &hl LSHFT D   &hs LCTRL F   &kp G           &kp TAB     &kp QUOT         &kp H            &hs RCTRL J    &hr RSHFT K  &hr RGUI L &lt FUN SEMI      
  &kp Z   &kp X       &kp C         &kp V         &kp B           &kp LSHFT   &kp RET          &kp N            &kp M          &kp COMMA    &kp DOT    &kp FSLH 
 //#ifdef TBLE_ORTHO
                      &mt LGUI ESC     &mt LGUI ESC  &lt LOWER BSPC  &kp SPACE   &kp SPACE        &lt RAISE SPACE  &mt RALT RET   &kp RCTRL
