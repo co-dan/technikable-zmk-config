@@ -61,7 +61,7 @@
  &kp A   &hl LGUI S  &hs LSHFT D   &hs LCTRL F   &kp G           &kp TAB     &kp QUOT         &kp H            &hs RCTRL J    &hs RSHFT K  &hr RGUI L &lt FUN SEMI      
  &kp Z   &kp X       &kp C         &kp V         &kp B           &kp LSHFT   &kp RET          &kp N            &kp M          &kp COMMA    &kp DOT    &kp FSLH 
 //#ifdef TBLE_ORTHO
-                     &mt LGUI ESC     &mt LGUI ESC  &lt LOWER BSPC  &kp BSPC   &kp SPACE        &lt RAISE SPACE  &mt RALT RET   &kp RCTRL
+                     &mt LGUI ESC     &lt LOWER  BSPC  &lt LOWER BSPC  &kp BSPC   &kp SPACE        &lt RAISE SPACE &lt RAISE SPACE  &mt RALT RET
 /* #elif defined(TBLE_MIT) */
 /*                  &kp LCTRL  &kp LALT    &mo NAV_L          &kp SPACE                   &mo NUM_L      &kp RALT    &kp RCTRL */
 /* #else // TBLE_DUAL_2U */
@@ -147,7 +147,7 @@
 		};
 		combo_caps-word {
 			timeout-ms = <50>;
-			key-positions = <RC(1,4) RC(1,8)>;
+			key-positions = <RC(1,3j) RC(1,8)>;
 			bindings = <&caps_word>;
 		};
 	};
