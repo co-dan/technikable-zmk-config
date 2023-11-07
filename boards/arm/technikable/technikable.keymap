@@ -185,19 +185,19 @@
 		compatible = "zmk,combos";
 		combo_bleLayer {
 			timeout-ms = <50>;
-			key-positions = <RC(3,5) RC(3,6)>;
+			key-positions = <37 38>;
 			bindings = <&mo BLE>;
 		};
-		/* combo_bleLayerTwo { */
-		/* 	timeout-ms = <50>; */
-		/* 	key-positions = <15 20>; */
-		/* 	bindings = <&caps_word>; */
-		/* }; */
 		combo_caps-word {
 			timeout-ms = <50>;
-			key-positions = <RC(1,3) RC(1,8)>;
+			key-positions = <15 20>;
 			bindings = <&caps_word>;
 		};
+		/* combo_caps-word { */
+		/* 	timeout-ms = <50>; */
+		/* 	key-positions = <RC(1,3) RC(1,8)>; */
+		/* 	bindings = <&caps_word>; */
+		/* }; */
 	};
 
 };
