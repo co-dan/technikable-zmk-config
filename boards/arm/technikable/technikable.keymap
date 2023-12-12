@@ -11,9 +11,9 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
 
-#define TBLE_ORTHO   true
+//#define TBLE_ORTHO   true
 // #define TBLE_MIT     true
-// #define TBLE_DUAL_2U true
+#define TBLE_DUAL_2U true
 
 #define BASE 0
 #define LOWER 1
@@ -101,11 +101,11 @@
         base_layer {
             label = "Base";
             bindings = <
- &kp Q   &kp W       &kp E         &kp R         &kp T           &kp ESC     &kp BKSP         &kp Y            &kp U          &kp I        &kp O      &kp P         
- &kp A   &hl LGUI S  &hs LSHFT D   &hs LCTRL F   &kp G           &kp TAB     &kp QUOT         &kp H            &hs RCTRL J    &hs RSHFT K  &hr RGUI L &lt FUN SEMI      
- &kp Z   &kp X       &kp C         &kp V         &kp B           &kp LSHFT   &kp RET          &kp N            &kp M          &kp COMMA    &kp DOT    &kp FSLH 
+ &kp Q   &kp W       &kp E         &kp R         &kp T           &kp PGUP     &kp C_VOL_UP     &kp Y            &kp U          &kp I        &kp O      &kp P         
+ &kp A   &hl LGUI S  &hs LSHFT D   &hs LCTRL F   &kp G           &kp PGDN     &kp C_VOL_DN     &kp H            &hs RCTRL J    &hs RSHFT K  &hr RGUI L &lt FUN SEMI      
+ &kp Z   &kp X       &kp C         &kp V         &kp B           &kp LSHFT    &kp RET          &kp N            &kp M          &kp COMMA    &kp DOT    &kp FSLH 
 //#ifdef TBLE_ORTHO
-                     &mt LGUI ESC     &lt LOWER  BSPC  &lt LOWER BSPC  &kp BSPC   &kp SPACE        &lt RAISE SPACE &lt RAISE SPACE  &mt RALT RET
+                        &mt LGUI ESC &mt LGUI ESC    &lt LOWER  BSPC  &lt RAISE SPACE &mt RALT RET &mt RALT RET
 /* #elif defined(TBLE_MIT) */
 /*                  &kp LCTRL  &kp LALT    &mo NAV_L          &kp SPACE                   &mo NUM_L      &kp RALT    &kp RCTRL */
 /* #else // TBLE_DUAL_2U */
@@ -117,9 +117,9 @@
         lower_layer {
             label = "Lower";
             bindings = <
-&kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT     &kp ESC     &kp BKSP       &kp CARET       &kp AMPS                &kp STAR                &kp MINUS       &kp EQUAL
-&kp TILDE	&kp UNDER	&kp PLUS	&kp PIPE  	&kp DQT       &kp TAB     &kp QUOT       &kp LEFT	&kp DOWN		&kp UP		        &kp RIGHT       &kp SQT
-&trans  	&trans		&trans		&trans		&trans        &kp LSHFT   &kp RET        &kp UNDER	&kp KP_PLUS		&kp LBKT		&kp RBKT	&kp BSLH
+&kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT     &trans    &trans       &kp CARET       &kp AMPS                &kp STAR                &kp MINUS       &kp EQUAL
+&kp TILDE	&kp UNDER	&kp PLUS	&kp PIPE  	&kp DQT       &trans    &trans       &kp LEFT	&kp DOWN		&kp UP		        &kp RIGHT       &kp SQT
+&trans  	&trans		&trans		&trans		&trans        &trans    &trans       &kp UNDER	&kp KP_PLUS		&kp LBKT		&kp RBKT	&kp BSLH
 #ifdef TBLE_DUAL_2U
                       &trans     &trans              &trans                    &trans       &trans         &trans
 #elif defined(TBLE_MIT)
@@ -133,9 +133,9 @@
         raise_layer {
             label = "Raise";
             bindings = <
-&kp N1   	&kp N2      &kp N3	&kp N4		&kp N5	   &kp ESC     &kp BKSP	      &kp N6  	&kp N7		&kp N8		&kp N9		&kp N0
-&kp GRAVE       &kp MINUS   &kp EQUAL	&kp BSLH	&kp APOS   &kp TAB     &kp QUOT       &kp LEFT  &kp DOWN	&kp UP  	&kp RIGHT	&kp SQT
-&kp LBRC       	&kp RBRC    &kp LPAR    &kp RPAR	&kp COLON  &kp LSHFT   &kp RET        &trans  	&trans		&trans		&trans		&kp BSLH
+&kp N1   	&kp N2      &kp N3	&kp N4		&kp N5	   &trans   &trans     &kp N6  	&kp N7		&kp N8		&kp N9		&kp N0
+&kp GRAVE       &kp MINUS   &kp EQUAL	&kp BSLH	&kp APOS   &trans   &trans     &kp LEFT  &kp DOWN	&kp UP  	&kp RIGHT	&kp SQT
+&kp LBRC       	&kp RBRC    &kp LPAR    &kp RPAR	&kp COLON  &trans   &trans     &trans  	&trans		&trans		&trans		&kp BSLH
 #ifdef TBLE_DUAL_2U
                      &trans     &kp N0              &trans                 &trans            &trans         &trans
 #elif defined(TBLE_MIT)
@@ -169,7 +169,7 @@
 &none	        &none	        &none	   &none	        &none    &none  	&none	     &bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3     	&bt BT_SEL 4
 &bt BT_PRV	&bt BT_NXT	&bt BT_CLR &none         	&none	 &none          &none        &none         	&none		&none	        &kp C_VOL_DN            &kp C_VOL_UP
 #ifdef TBLE_DUAL_2U
-                      &trans     &kp LS(N0)              &trans                    &trans       &trans         &trans
+                      &trans     &trans              &trans                    &trans       &trans         &trans
 #elif defined(TBLE_MIT)
                       &trans     &kp LS(N0)      &trans                &trans             &trans      &trans   &trans
 #else
